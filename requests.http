@@ -1,0 +1,35 @@
+GET http://localhost:7071/api/GetPlayerScoresFn
+
+POST http://localhost:7071/api/AddPlayerScoreFn 
+Content-Type: "application/json"
+
+{
+    "login":"artur",
+    "score":"1"
+}
+
+POST http://localhost:7071/api/AddPlayerScoreFn 
+Content-Type: "application/json"
+
+{
+    "login":"karol",
+    "score":"35"
+}
+
+POST http://localhost:7071/api/AddPlayerScoreFn 
+Content-Type: "application/json"
+
+{
+    "login":"ania",
+    "score":"250"
+}
+
+
+@token = JqAJa72mUr0aXGbp/BDtDSejUtaKBadpyQ7aqYea/m2CgkULaLmMQA==
+POST https://developerlifefn.azurewebsites.net/api/AddPlayerScoreFn?code={{token}}
+Content-Type: "application/json"
+
+{
+    "login":"karolina",
+    "score":"291"
+}
